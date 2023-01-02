@@ -1,0 +1,730 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- External css -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap css -->
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.2.1-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.2.1-dist/css/bootstrap.css"
+    />
+    <!-- slick css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/jq plugins/slick-1.8.1/slick/slick.css"
+    />
+    <!-- Easey zoom css -->
+    <link
+      rel="stylesheet"
+      href="assets/jq plugins/EasyZoom-master/css/easyzoom.css"
+    />
+    <!-- Scroll to top/bottom css -->
+    <link
+      rel="stylesheet"
+      href="assets/jq plugins/jQuery-Plugin-For-Scroll-To-Top-Bottom-Buttons-elevator/dist/jquery.elevator.min.css"
+    />
+    <!-- exzoom -->
+    <script src="assets/jq plugins/Product-Carousel-Magnifying-Effect-exzoom/src/jquery.exzoom.css"></script>
+  </head>
+
+  <body>
+    <div id="top" class="elevator"></div>
+
+    <!-- Carousel  with navbar -->
+    <div class="row justify-content-center align-items-center g-2">
+      <!--Navbar -->
+      <nav
+        class="pv-1 navbar bg-white navbar-expand-lg sticky-top d-flex align-items-start navHeight"
+      >
+        <div class="container-fluid fixed-top bg-white shadow">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/images/logo.png" alt="" width="auto" height="50"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-evenly"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-black fw-bold" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black fw-bold" href="#">Shop</a>
+              </li>
+              <li class="nav-item d-block">
+                <a class="nav-link text-black fw-bold" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black fw-bold" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black fw-bold" href="#">Page</a>
+              </li>
+            </ul>
+            <!-- Navbar buttons -->
+            <form class="mb-3 mt-3">
+              <!-- login / signup icons -->
+              <a class="aLink" href="sigup.html">
+                <svg
+                  class="ms-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="Black"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+                <p class="d-inline text-black-50">Register / login</p>
+              </a>
+              <div class="vr ms-3"></div>
+              <a class="aLink" href="">
+                <svg
+                  class="ms-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="Black"
+                  class="bi bi-cart-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                  />
+                  <path
+                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                  />
+                </svg>
+                <p class="d-inline text-black-50">Cart</p>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousel -->
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide pb-md-1"
+        data-bs-ride="carousel carouselHeight"
+      >
+        <div class="carousel-inner carouselHeight">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/hero1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/hero1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/hero1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div class="container">
+      <!-- Category -->
+      <div class="container">
+        <p class="h4 pt-md-4">Search by categories</p>
+
+        <div class="row justify-content-center align-items-center g-2 pt-md-2">
+          <div class="col-md-2 col-4 text-center">
+            <img class="roundCard" src="assets/images/fod.jpg" />
+            <p class="h6">Food</p>
+          </div>
+
+          <div class="col-md-2 col-4 p-auto text-center">
+            <img class="roundCard" src="assets/images/treats.jpg" />
+            <p class="h6">Treats</p>
+          </div>
+
+          <div class="col-md-2 col-4 p-auto text-center">
+            <img class="roundCard" src="assets/images/Toys.jpg" />
+            <p class="h6">Toys</p>
+          </div>
+
+          <div class="col-md-2 col-4 p-auto text-center">
+            <img class="roundCard" src="assets/images/collar.jpg" />
+            <p class="h6">Collar</p>
+          </div>
+
+          <div class="col-md-2 col-4 p-auto text-center">
+            <img class="roundCard" src="assets/images/groom.jpg" />
+            <p class="h6">Groom</p>
+          </div>
+
+          <div class="col-md-2 col-4 p-auto text-center">
+            <img class="roundCard" src="assets/images/bowls.jpg" />
+            <p class="h6">Bowls</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="container">
+        <hr />
+        <div class="row justify-content-center align-items-center g-2 pt-md-3">
+          <p class="h4 pt-1">Boo-tiful Halloween Favorites by Chewy</p>
+
+          <div class="col-md-2 col-6 text-center">
+            <div class="card w-100">
+              <div class="easyzoom easyzoom--overlay is-ready">
+                <a href="assets/images/p2.png">
+                  <img
+                    class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                    src="assets/images/p2.png"
+                    width="640"
+                    height="360"
+                  />
+                </a>
+              </div>
+              <div class="card-body text-start">
+                <p class="card-title fw-bold">
+                  Disney Stitch Space Suit Dog & Cat Costume
+                </p>
+                <p class="card-text fw-bold text-danger">$23.54</p>
+                <div class="colorButton">
+                  <a
+                    href="product_details.html"
+                    class="btn text-light w-100 text-center"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6 text-center">
+            <div class="card w-100">
+              <div class="easyzoom easyzoom--overlay is-ready">
+                <a href="assets/images/p2.png">
+                  <img
+                    class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                    src="assets/images/p2.png"
+                    width="640"
+                    height="360"
+                  />
+                </a>
+              </div>
+              <div class="card-body text-start">
+                <p class="card-title fw-bold">
+                  Disney Stitch Space Suit Dog & Cat Costume
+                </p>
+                <p class="card-text fw-bold text-danger">$23.54</p>
+                <div class="colorButton">
+                  <a
+                    href="product_details.html"
+                    class="btn text-light w-100 text-center"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6 text-center">
+            <div class="card w-100">
+              <div class="easyzoom easyzoom--overlay is-ready">
+                <a href="assets/images/p2.png">
+                  <img
+                    class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                    src="assets/images/p2.png"
+                    width="640"
+                    height="360"
+                  />
+                </a>
+              </div>
+              <div class="card-body text-start">
+                <p class="card-title fw-bold">
+                  Disney Stitch Space Suit Dog & Cat Costume
+                </p>
+                <p class="card-text fw-bold text-danger">$23.54</p>
+                <div class="colorButton">
+                  <a
+                    href="product_details.html"
+                    class="btn text-light w-100 text-center"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6 text-center">
+            <div class="card w-100">
+              <div class="easyzoom easyzoom--overlay is-ready">
+                <a href="assets/images/p2.png">
+                  <img
+                    class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                    src="assets/images/p2.png"
+                    width="640"
+                    height="360"
+                  />
+                </a>
+              </div>
+              <div class="card-body text-start">
+                <p class="card-title fw-bold">
+                  Disney Stitch Space Suit Dog & Cat Costume
+                </p>
+                <p class="card-text fw-bold text-danger">$23.54</p>
+                <div class="colorButton">
+                  <a
+                    href="product_details.html"
+                    class="btn text-light w-100 text-center"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6 text-center">
+            <div class="card w-100">
+              <div class="easyzoom easyzoom--overlay is-ready">
+                <a href="assets/images/p2.png">
+                  <img
+                    class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                    src="assets/images/p2.png"
+                    width="640"
+                    height="360"
+                  />
+                </a>
+              </div>
+              <div class="card-body text-start">
+                <p class="card-title fw-bold">
+                  Disney Stitch Space Suit Dog & Cat Costume
+                </p>
+                <p class="card-text fw-bold text-danger">$23.54</p>
+                <div class="colorButton">
+                  <a
+                    href="product_details.html"
+                    class="btn text-light w-100 text-center"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6 text-center">
+            <div class="card w-100">
+              <div class="easyzoom easyzoom--overlay is-ready">
+                <a href="assets/images/p2.png">
+                  <img
+                    class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                    src="assets/images/p2.png"
+                    width="640"
+                    height="360"
+                  />
+                </a>
+              </div>
+              <div class="card-body text-start">
+                <p class="card-title fw-bold">
+                  Disney Stitch Space Suit Dog & Cat Costume
+                </p>
+                <p class="card-text fw-bold text-danger">$23.54</p>
+                <div class="colorButton">
+                  <a
+                    href="product_details.html"
+                    class="btn text-light w-100 text-center"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row justify-content-center align-items-center g-2 pt-md-3"
+          >
+            <div
+              class="col-md-2 col-4 d-none d-md-block text-center moreProducts"
+            >
+              <div class="card w-100">
+                <div class="easyzoom easyzoom--overlay is-ready">
+                  <a href="assets/images/p2.png">
+                    <img
+                      class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                      src="assets/images/p2.png"
+                      width="640"
+                      height="360"
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-start">
+                  <p class="card-title fw-bold">
+                    Disney Stitch Space Suit Dog & Cat Costume
+                  </p>
+                  <p class="card-text fw-bold text-danger">$23.54</p>
+                  <div class="colorButton">
+                    <a href="#" class="btn text-light w-100 text-center"
+                      >Buy now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-4 d-none d-md-block text-center">
+              <div class="card w-100">
+                <div class="easyzoom easyzoom--overlay is-ready">
+                  <a href="assets/images/p2.png">
+                    <img
+                      class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                      src="assets/images/p2.png"
+                      width="640"
+                      height="360"
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-start">
+                  <p class="card-title fw-bold">
+                    Disney Stitch Space Suit Dog & Cat Costume
+                  </p>
+                  <p class="card-text fw-bold text-danger">$23.54</p>
+                  <div class="colorButton">
+                    <a href="#" class="btn text-light w-100 text-center"
+                      >Buy now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-4 d-none d-md-block text-center">
+              <div class="card w-100">
+                <div class="easyzoom easyzoom--overlay is-ready">
+                  <a href="assets/images/p2.png">
+                    <img
+                      class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                      src="assets/images/p2.png"
+                      width="640"
+                      height="360"
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-start">
+                  <p class="card-title fw-bold">
+                    Disney Stitch Space Suit Dog & Cat Costume
+                  </p>
+                  <p class="card-text fw-bold text-danger">$23.54</p>
+                  <div class="colorButton">
+                    <a href="#" class="btn text-light w-100 text-center"
+                      >Buy now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-4 d-none d-md-block text-center">
+              <div class="card w-100">
+                <div class="easyzoom easyzoom--overlay is-ready">
+                  <a href="assets/images/p2.png">
+                    <img
+                      class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                      src="assets/images/p2.png"
+                      width="640"
+                      height="360"
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-start">
+                  <p class="card-title fw-bold">
+                    Disney Stitch Space Suit Dog & Cat Costume
+                  </p>
+                  <p class="card-text fw-bold text-danger">$23.54</p>
+                  <div class="colorButton">
+                    <a href="#" class="btn text-light w-100 text-center"
+                      >Buy now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-4 d-none d-md-block text-center">
+              <div class="card w-100">
+                <div class="easyzoom easyzoom--overlay is-ready">
+                  <a href="assets/images/p2.png">
+                    <img
+                      class="ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                      src="assets/images/p2.png"
+                      width="640"
+                      height="360"
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-start">
+                  <p class="card-title fw-bold">
+                    Disney Stitch Space Suit Dog & Cat Costume
+                  </p>
+                  <p class="card-text fw-bold text-danger">$23.54</p>
+                  <div class="colorButton">
+                    <a href="#" class="btn text-light w-100 text-center"
+                      >Buy now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-4 d-none d-md-block text-center">
+              <div class="card w-100">
+                <img
+                  src="assets/images/p2.png "
+                  ref="assets/images/p2.png "
+                  class="imgZoom ps-5 pe-5 pt-1 pb-2 card-img-top productCard img-fluid"
+                />
+                <div class="card-body text-start">
+                  <p class="card-title fw-bold">
+                    Disney Stitch Space Suit Dog & Cat Costume
+                  </p>
+                  <p class="card-text fw-bold text-danger">$23.54</p>
+                  <div class="colorButton">
+                    <a href="#" class="btn text-light w-100 text-center"
+                      >Buy now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NewsLetter signup -->
+      <div class="container mt-3 newLetter">
+        <div class="row align-items-center p-4 m-5">
+          <div class="col-12 col-md">
+            <p class="fw-bold h3 lh-1">Get hot deals by join with us</p>
+            <p class="lh-1">
+              Sign up to get emails about the latest deals, product drops and
+              more!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <form class="row g-3">
+              <div class="col-md-8 col">
+                <label for="email" class="visually-hidden">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div
+                class="col-md-4 newsLetterButton text-center justify-content-center align-items-center"
+              >
+                <button class="btn text-light">Sign up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand showcase -->
+      <div class="container">
+        <hr />
+        <p class="h4 pt-1">2,000 Brand in stocks!</p>
+        <div
+          class="row your-class justify-content-evenly align-items-center g-2"
+        >
+          <div class="col-md-3 imageContainer">
+            <img class="img-fluid" src="assets/images/brand1.png" />
+          </div>
+          <div class="col-md-3 imageContainer">
+            <img
+              class="img-fluid mt-md-3 mt-2"
+              src="assets/images/brand2.png"
+            />
+          </div>
+          <div class="col-md-3 imageContainer">
+            <img
+              class="img-fluid mt-md-3 mt-2"
+              src="assets/images/brand4.png"
+            />
+          </div>
+          <div class="col-md-3 imageContainer">
+            <img class="img-fluid" src="assets/images/brand1.png" />
+          </div>
+          <div class="col-md-3 imageContainer">
+            <img
+              class="img-fluid mt-md-3 mt-2"
+              src="assets/images/brand2.png"
+            />
+          </div>
+          <div class="col-md-3 imageContainer">
+            <img
+              class="img-fluid mt-md-3 mt-2"
+              src="assets/images/brand4.png"
+            />
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <!-- Banner-->
+      <div class="container">
+        <p class="h4 pt-1 pb-3">Service from us</p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              class="img-fluid"
+              src="assets/images/banner2.jpg"
+              ref="assets/images/banner2.jpg"
+            />
+            <div class="text-center">
+              <a href="" class="link-dark fw-bold">Meet our Insurance Plans </a>
+              <p>Available in select states. Learn More.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="img-fluid"
+              src="assets/images/banner4.jpg"
+              alt=""
+              srcset=""
+            />
+            <div class="text-center">
+              <a href="" class="link-dark fw-bold"> Live Vet Help </a>
+              <p>7 Days a Week via Chat or Video Explore More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0 bg-dark">
+      <div class="container py-4">
+        <div class="row gy-4 gx-5">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="h1 text-white">FB.</h5>
+            <p class="small text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <p class="small text-muted mb-0">
+              &copy; Copyrights. All rights reserved.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-3">Quick links</h5>
+            <ul class="list-unstyled text-muted">
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#" class="text-light">About</a></li>
+              <li><a href="#" class="text-light">Get started</a></li>
+              <li><a href="#" class="text-light">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-3">Quick links</h5>
+            <ul class="list-unstyled text-muted">
+              <li><a href="#" class="text-light">Affiliates</a></li>
+              <li><a href="#" class="text-light">Jobs</a></li>
+              <li><a href="#" class="text-light">Give Back</a></li>
+              <li><a href="#" class="text-light">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-3">Newsletter</h5>
+            <p class="small text-muted">
+              Sign up to get emails about the latest deals, product drops and
+              more!
+            </p>
+            <form action="#">
+              <div class="input-group mb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Recipient's username"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-primary"
+                  id="button-addon2"
+                  type="button"
+                >
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="bottom" class="elevator"></div>
+
+    <!-- Boostrap js -->
+    <script src="assets/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="assets/jquery/jquery-3.6.1.min.js"></script>
+    <!-- My js -->
+    <script src="assets/js/index.js"></script>
+    <!-- SLick js -->
+    <script
+      type="text/javascript"
+      src="assets/jq plugins/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Easy zoom -->
+    <script src="assets/jq plugins/EasyZoom-master/dist/easyzoom.js"></script>
+    <!-- scroll to top/bottom js -->
+    <script src="assets/jq plugins/jQuery-Plugin-For-Scroll-To-Top-Bottom-Buttons-elevator/dist/jquery.elevator.min.js"></script>
+    <!-- exzoom -->
+    <script src="assets/jq plugins/Product-Carousel-Magnifying-Effect-exzoom/src/jquery.exzoom.js"></script>
+  </body>
+</html>

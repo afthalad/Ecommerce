@@ -1,0 +1,18 @@
+- Min 2 pages website
+    -index.html
+    -signup.html
+    -product_details.html
+
+- bootstarp
+    -Boostrap 5.2.1
+
+- Min 3 jquery plugins
+    - EasyZoom-master (Product zooming while hover)
+    - slick-1.8.1 (Carousel)
+    - jQuery-Plugin-For-Scroll-To-Top-Bottom-Buttons-elevator (Go to top and Bottom)
+    - jQuery-Plugin-To-Create-Increment-Decrement-Input-Spinners-handleCounter (Cart item qty)
+
+- Comments
+- Code standed
+- Folder structure
+- Creativity
